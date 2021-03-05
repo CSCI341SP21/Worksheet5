@@ -12,7 +12,7 @@ int main(){
   struct stat sb;
   
   int fd1 = open("sampletext1.txt", O_RDONLY);
-  if (stat("csci341_temp.txt", &sb)){
+  if (stat("csci341_temp.txt", &sb) >= 0){
       remove("csci341_temp.txt");
     }
   
